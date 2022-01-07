@@ -3,16 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script
+      src="https://kit.fontawesome.com/32f374c92f.js"
+      crossorigin="anonymous"
+    ></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div id="app">
-      Build The Community Your Fans Will Love Huddle re-imagines the way we
-      build communities. You have a voice, but so does your audience. Create
-      connections with your users as you engage in genuine discussion. Register
+  <body
+    class="flex justify-center items-center bg-violet bg-mobile bg-no-repeat bg-contain"
+  >
+    <div id="app" class="p-8">
+      <header>
+        <img src="images/logo.svg" alt="" class="w-2/5" />
+      </header>
+      <div class="flex justify-center items-center flex-wrap">
+        <img
+          src="images/illustration-mockups.svg"
+          alt="mockups"
+          class="my-16"
+        />
+        <div class="">
+          <h1
+            class="text-white font-poppins text-center font-bold text-3xl leading-relaxed"
+          >
+            Build The Community Your Fans Will Love
+          </h1>
+          <p
+            class="text-white font-openSans text-center my-4 leading-relaxed p-3"
+          >
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <input
+            type="submit"
+            class="block mx-auto bg-white text-violet w-4/6 p-2 rounded-full text-center my-8 shadow-gray-700 shadow-md"
+            value="Register"
+          />
+        </div>
+      </div>
+      <footer
+        class="flex items-center justify-center flex-nowrap gap-3 text-white mt-16"
+      >
+        <div class="">
+          <div
+            class="rounded-full border-[1px] border-white inline px-2 py-1 text-center"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </div>
+        </div>
+        <div>
+          <div
+            class="rounded-full border-[1px] border-white inline px-2 py-1 text-center"
+          >
+            <i class="fab fa-twitter"></i>
+          </div>
+        </div>
+        <div>
+          <div
+            class="rounded-full border-[1px] border-white inline px-2 py-1 text-center"
+          >
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+      </footer>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
