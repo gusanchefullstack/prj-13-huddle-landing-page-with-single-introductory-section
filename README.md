@@ -55,30 +55,32 @@ Using FontAwesome icons loading them directly from internet: The kit must be gen
   crossorigin="anonymous"
 ></script>
 <footer
-  class="flex items-center justify-center flex-nowrap gap-3 text-white mt-16 md:justify-end md:mt-4 lg:mt-2"
+  class="mt-16 mb-8 flex justify-center items-center xl:justify-end xl:mt-1"
 >
-  <div class="">
-    <div
-      class="rounded-full border-[1px] border-white hover:border-softMagenta inline px-2 py-1 text-center hover:text-softMagenta hover:cursor-pointer"
-    >
-      <i class="fab fa-facebook-f"></i>
-    </div>
+  <div class="social-icon">
+    <i class="fab fa-facebook-f"></i>
   </div>
-  <div>
-    <div
-      class="rounded-full border-[1px] border-white hover:border-softMagenta inline px-2 py-1 text-center hover:text-softMagenta hover:cursor-pointer"
-    >
-      <i class="fab fa-twitter"></i>
-    </div>
+  <div class="social-icon">
+    <i class="fab fa-twitter"></i>
   </div>
-  <div>
-    <div
-      class="rounded-full border-[1px] border-white hover:border-softMagenta inline px-2 py-1 text-center hover:text-softMagenta hover:cursor-pointer"
-    >
-      <i class="fab fa-instagram"></i>
-    </div>
+  <div class="social-icon">
+    <i class="fab fa-instagram"></i>
   </div>
 </footer>
+```
+
+Using Tailwindcss @apply
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .social-icon {
+    @apply mx-1 w-8 h-8 border-[1px] border-white rounded-full text-white flex justify-center items-center hover:text-softMagenta hover:border-softMagenta hover:cursor-pointer;
+  }
+}
 ```
 
 Using multiple background images in Tailwindcss
@@ -104,6 +106,27 @@ module.exports = {
   },
   plugins: [],
 };
+```
+
+Using Tailwindcss flex basis to adjust 2 items to half of width
+
+```html
+<div
+  class="xl:flex xl:flex-nowrap xl:justify-center xl:items-center xl:space-x-12"
+>
+  <div class="xl:basis-1/2">
+    <img src="/images/illustration-mockups.svg" class="my-16" alt="" />
+  </div>
+  <div class="xl:basis-1/2">
+    <h1>Build The Community <br />Your Fans Will Love</h1>
+    <p>
+      Huddle re-imagines the way we build communities. You have a voice, but so
+      does your audience. Create connections with your users as you engage in
+      genuine discussion.
+    </p>
+    <button>Register</button>
+  </div>
+</div>
 ```
 
 ### Continued development
