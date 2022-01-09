@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .social-icon {
+    @apply mx-1 w-8 h-8 border-[1px] border-white rounded-full text-white flex justify-center items-center hover:text-softMagenta hover:border-softMagenta;
+  }
+}
